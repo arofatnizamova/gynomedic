@@ -131,6 +131,19 @@
     /* обязательно! */
 }
 
+.nav-pills .nav-link {
+    border: 1px solid var(--color-corp);
+    border-radius: 50px;
+    width: 200px;
+    padding: 10px 0;
+    font-weight: 600;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+    color: white;
+    background-color: var(--color-corp);
+}
 
 @media(max-width: 1200px) {
     .nav-link {
