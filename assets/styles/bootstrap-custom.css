@@ -1,0 +1,131 @@
+.navbar-nav,
+.btn-language {
+    background: #FAFAFA;
+    border-radius: 20px;
+    padding: 0px 20px;
+}
+
+.nav-link {
+    font-size: 15px;
+    color: black;
+}
+
+.nav-link:hover {
+    color: var(--color-corp);
+}
+
+.nav-item.active .nav-link {
+    color: var(--color-red);
+}
+
+.btn-language {
+    padding: 8px 20px;
+}
+
+.btn-language.dropdown-toggle::after {
+    display: none;
+}
+
+.dropdown-menu {
+    border: none;
+    background: #FAFAFA;
+    border-radius: 20px;
+}
+
+.dropdown-menu[data-bs-popper] {
+    left: unset;
+    right: 0;
+}
+
+.navbar-toggler {
+    background: #FAFAFA;
+    padding: 8px 16px;
+    border-radius: 15px;
+    border: none;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.navbar-toggler-icon {
+    background-image: url('../icons/main-icons/burger-menu.svg');
+    width: 1em;
+    height: 1em;
+}
+
+.dropdown-item:hover {
+    color: var(--color-corp) !important;
+    background-color: unset !important;
+}
+
+.text-decoration-underline {
+    text-decoration: underline;
+    text-decoration-thickness: 2px !important;
+    text-underline-offset: 10px !important;
+    /* расстояние от текста */
+}
+
+.accordion-button {
+    background-color: var(--color-corp);
+    color: white;
+    font-weight: 600;
+}
+
+.accordion-button::after {
+    background-image: url('../icons/main-icons/chevron.svg');
+}
+
+.accordion-button:not(.collapsed)::after {
+    background-image: url('../icons/main-icons/chevron-1.svg');
+    transform: unset;
+}
+
+.accordion-button:not(.collapsed) {
+    color: white;
+    background-color: var(--color-corp);
+    box-shadow: unset;
+}
+
+.accordion-item {
+    border: none;
+}
+
+.accordion-body {
+    background: #F8F6FB;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+}
+
+.accordion-item:first-of-type>.accordion-header .accordion-button,
+.accordion-button {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.accordion-item:last-of-type>.accordion-header .accordion-button.collapsed {
+    border-bottom-right-radius: unset;
+    border-bottom-left-radius: unset;
+}
+
+.form-control {
+    border: none;
+    background: transparent;
+    border-radius: 0;
+    padding-left: 0;
+    border-bottom: 2px solid white;
+}
+
+.form-control::placeholder {
+    color: white;
+}
+
+@media(max-width: 1200px) {
+    .nav-link {
+        font-size: 14px;
+    }
+}
