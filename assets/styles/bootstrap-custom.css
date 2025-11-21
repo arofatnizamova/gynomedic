@@ -124,6 +124,14 @@
     color: white;
 }
 
+
+.breadcrumb-item+.breadcrumb-item::before {
+    --bs-breadcrumb-divider: "\f285";
+    font-family: "bootstrap-icons";
+    /* обязательно! */
+}
+
+
 @media(max-width: 1200px) {
     .nav-link {
         font-size: 14px;
